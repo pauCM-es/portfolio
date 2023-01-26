@@ -3,7 +3,7 @@ import './ProjectCard.scss'
 
 const ProjectCard = ({project}) => {
   
-  const {title, subtitle, image, description, github, link} = project
+  const {title, subtitle, image, github, link} = project
   const githubIcon = "./assets/icons/github.svg"
 
   return (
@@ -13,8 +13,9 @@ const ProjectCard = ({project}) => {
       <div className="image-container">
         <img src={image} alt="captura de pantalla del proyecto" />
       </div>
+      <div className='projectCard-iconList'></div>
       {github && <div><a href={github}><img src={githubIcon} alt="link to repositorio github" /></a></div> }
-      {link && <p>Link to app: {link}</p> }
+      {link && <a href={link}>Link to app</a> }
     </div>
   )
 }

@@ -8,20 +8,38 @@ import AboutMe from "../../components/sections/about-me/AboutMe";
 import Hero from "../../components/sections/hero/Hero";
 import Button from "../../components/buttons/Button";
 import { cv } from '../../cv'
+import PageNavbar from "../../components/page-navbar/PageNavbar";
 
 const About = ({setShowPage}) => {
-
-  const [showInfo, setShowInfo] = useState("skills")
-  const infoSections = ["About me", "Education", "Experience", "Skills"]
   const {hero, aboutMe, education, experience, skills, languages} = cv
+  const [showInfo, setShowInfo] = useState("About me")
+  const infoSections = [
+    {
+      text: "About me",
+      component: <AboutMe hero={hero} info={aboutMe} />
+    },
+    {
+      text: "Education",
+      component: <Education education={education} />
+    },
+    {
+      text: "Experience",
+      component: <Experience experience={experience} />
+    },
+    {
+      text: "Skills",
+      component: <Skills skills={skills} languages={languages} />
+    },
+  ]
   
   return (
     <div className="page-about">
-      <section className="page-about_header">
-        <Button key="aboutBtn-home" text="HOME" className="page_btn" goTo={["home", setShowPage]} />
-        <h1 className="page-title">About</h1>
-        <Button key="aboutBtn-projects" text="PROJECTS" className="page_btn" goTo={["projects", setShowPage]} />
-      </section>
+      <PageNavbar
+        button1="home"
+        button2="projects"
+        title="ABOUT"
+        setShowPage={setShowPage}
+      />
 
       <section className="page-about_content">
         <section className="page-about_hero">
@@ -30,16 +48,23 @@ const About = ({setShowPage}) => {
         <section className="page-about_info">
           <div>
             {infoSections.map((section, index) => {
-              const goTo = section.toLowerCase()
-              return <Button key={index + goTo} text={section} className="about-section_link" goTo={[goTo, setShowInfo]} />
+              return (
+                <Button 
+                  key={index + section.text} 
+                  text={section.text} 
+                  className="about-section_link" 
+                  goTo={[section.text, setShowInfo]} 
+                />
+              )
             })}
           </div>
-          <section>
-            {showInfo === "about me" && <AboutMe hero={hero} info={aboutMe} />}
-            {showInfo === "education" && <Education education={education} />}
-            {showInfo === "experience" && <Experience experience={experience} />}
-            {showInfo === "skills" && <Skills skills={skills} languages={languages} />}
-          </section>
+          <div>
+            {infoSections.map(section => {
+              return (
+                section.text === showInfo ? section.component : null
+              )
+            })}
+          </div>
         </section>
       </section>
     </div>

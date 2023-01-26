@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.page_btn {
+  padding: 1rem;
+  border-radius: 30px; 
+  border: none;
+}
+
+.primary {
+  background-color: $color-accent;
+  color: $color-secondary;
+  transition: all 100ms ease-in;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-accent;
+    border: 2px solid $color-accent;
+    scale: 1.05;
+  }
+}
+
+.big {
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 4rem;
+}

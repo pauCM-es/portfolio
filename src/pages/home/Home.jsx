@@ -6,6 +6,8 @@ const Home = ({setShowPage}) => {
   
   return (
     <div className='page-home'>
+      <div className="bg bg-left"></div>
+      <div className="bg bg-right"></div>
 
       <div className='page-content'>
 
@@ -20,7 +22,7 @@ const Home = ({setShowPage}) => {
 
       </div>
       
-      <Button key="btn-knowMore"  text="KNOW MORE" className="page_btn" goTo={["about", setShowPage]}/>
+      <Button key="btn-knowMore"  text="KNOW MORE" className="page_btn primary big" goTo={["about", setShowPage]}/>
 
     </div>
   )

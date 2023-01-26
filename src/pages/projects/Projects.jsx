@@ -1,21 +1,24 @@
 import React from "react";
-import Button from "../../components/buttons/Button";
 import "./Projects.scss";
 import { projects } from "../../projects";
 import ProjectCard from "../../components/cards/ProjectCard";
+import PageNavbar from "../../components/page-navbar/PageNavbar";
 
 const Projects = ({setShowPage}) => {
 
   return (
     <div className="page-projects">
-      <Button keyProp="projectsBtn-home" text="HOME" className="page_btn" goTo={["home", setShowPage]} />
-      <h1 className="page-title">Projects</h1>
-      <Button keyProp="projectsBtn-about" text="ABOUT" className="page_btn" goTo={["about", setShowPage]} />
+      <PageNavbar
+        button1="home"
+        button2="about"
+        title="PROJECTS"
+        setShowPage={setShowPage}
+      />
 
       <section className="projects-content">
         {projects.map(project => {
           return (
-            <ProjectCard project={project} />
+            <ProjectCard key={`${project.title}-${project.subtitle}`} project={project} />
           )
         })}
       </section>

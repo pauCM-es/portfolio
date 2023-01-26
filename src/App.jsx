@@ -5,10 +5,10 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 
 function App() {
-  const [showPage, setShowPage] =  useState("projects")
+  const [showPage, setShowPage] =  useState("home")
 
   return (
-    <div className="App">
+    <div className="app">
       {showPage === "home" && <Home setShowPage={setShowPage}/>}
       {showPage === "about" && <About setShowPage={setShowPage}/>}
       {showPage === "projects" && <Projects setShowPage={setShowPage}/>}
