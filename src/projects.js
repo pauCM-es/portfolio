@@ -10,12 +10,12 @@ export const projects = [
     the coding part would be faster and cleaner.`,
     tags: ["HTML", "CSS", "SCSS", "BEM", "responsive"],
     github: "https://github.com/pauCM-es/upgrade-html-css/tree/master/slack",
-    link: "",
+    link: null,
   },
   {
     title: `Pokedex`,
     subtitle: "Vanilla JS project end of module at Upgrade Hub bootcamp.",
-    image: ``,
+    image: `./assets/images/pokedex-screenCapture.png`,
     description: `Technologies used: vanilla JavaScript, DOM, HTML & SCSS. 
     Use of poke-API fetchs (async/await). The requirement of this project was fetching the info and do 
     some layout manipulating the DOM. I saw a lot of possibilities with the tools learned, and tried to 
@@ -30,7 +30,7 @@ export const projects = [
   {
     title: `3d prints API`,
     subtitle: "NODE project end of module at Upgrade Hub bootcamp",
-    image: ``,
+    image: `./assets/images/API-screenCapture.png`,
     description: `Technologies used: NODE, Express, MongoDB, mongoose, authentication, web scrapping...
     This was a really hard one even if it is a really simple API. It is suppose to save the 
     differents settings the user configures their 3d printer for the diferent designs.
@@ -42,16 +42,19 @@ export const projects = [
     `,
     tags: ["NODE", "Express", "API", "Asynchronous", "MongoDB", "Web Scrapping", "GIT"],
     github: "https://github.com/pauCM-es/upgrade-api-project",
-    link: "",
+    link: null,
   },
   {
     title: `Portfolio`,
     subtitle: "REACT SPA project end of module at Upgrade Hub bootcamp",
     image: ``,
-    description: `.
+    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Excepturi fuga minima voluptate rem consequuntur quos explicabo, ipsum ducimus 
+    quaerat numquam dolorum beatae consectetur aliquid neque eius quae quibusdam. 
+    Temporibus, numquam!.
     `,
     tags: [],
-    github: "",
-    link: "",
+    github: "https://github.com/pauCM-es/portfolio",
+    link: null,
   },
 ]

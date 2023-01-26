@@ -1,19 +1,29 @@
-export const CV = {
+export const cv = {
   hero: {
-    name: "Paula Costa",
+    name: "Paula",
+    surnames: ["Costa", "Mingarro"],
+    description: "Full Stack Developer",
     city: "Zaragoza, Spain",
     email: "costamingarro@gmail.com",
     birthDate: "19/08/1989",
     phone: "(+34) 666 55 44 33",
-    image: "../public/assets/images/tendi.png",
+    image: "./assets/images/tendi.png",
     gitHub: "https://github.com/PCM-es",
+    linkedIn: "https://www.linkedin.com/in/paula-costa-mingarro/"
   },
   aboutMe: [
     {
-      info: "🤖 My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
+      info: `I consider myself a trustworthy person with common sense, and also someone with great predisposition
+      and desire to continue learning and working hard.`,
     },
     {
-      hobbies: "In my free time, I like to 3d print things and airbrush paint them. Also going for a swim relax me, and like spending time with my family.",
+      info: `A year ago I stumbled across the programming word by chance, and after some research and self-learning, 
+      I've fallen in love with it. Finally I know what it feels to be passionate about something. It's like I found the 
+      missing piece of my puzzle.`
+    },
+    {
+      info: `Other facts about me: In my free time, I like to 3d print things and airbrush them. Going for a swim o jumping rope relax me, 
+      and spending time with my family is important to me.`,
     },
   ],
   education: [
@@ -56,6 +66,7 @@ export const CV = {
     {
       language: "Spanish",
       level: {
+        general: "Native",
         comprenshive: "Native",
         speak: "Native",
         write: "Native",
@@ -64,6 +75,7 @@ export const CV = {
     {
       language: "English",
       level: {
+        general: "C1",
         comprenshive: "C1",
         speak: "C1",
         write: "C1",
@@ -71,28 +83,29 @@ export const CV = {
     },
   ],
   skills: [
-    {soft: 
-      [
-        "Problem-solving",
-        "Curiosity and self-learning",
-        "Teamwork",
-        "Good under pressure",
-        "Self-awareness",
-        "Open-mindedness and adaptability",
-        "Ability to accept feedback",
-      ]
+    {
+      type: "Soft",
+      list:  [
+          "Problem-solving",
+          "Curiosity and self-learning",
+          "Teamwork",
+          "Good under pressure",
+          "Self-awareness",
+          "Open-mindedness and adaptability",
+          "Ability to accept feedback",
+        ]
     },
-    {hard: 
-      [
-        "HTML & CSS",
-        "JavaScript",
-        "TypeScript",
-        "REACT",
-        "ANGULAR",
-        "NODE, Express, MongoDB",
-        "PHP, mySQL"
-      ]
-    }
-  ],
-  
+    { 
+      type: "Hard", 
+      list:  [
+          "HTML & CSS",
+          "JavaScript",
+          "TypeScript",
+          "REACT",
+          "ANGULAR",
+          "NODE, Express, MongoDB",
+          "PHP, mySQL"
+        ]
+    },
+  ]
 };
