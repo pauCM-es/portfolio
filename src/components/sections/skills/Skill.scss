@@ -1,0 +1,90 @@
+@import '../../../variables';
+
+.skills {
+  width: 100%;
+
+  h2 {
+    font-family: $font-accent;
+    width: fit-content;
+  }
+
+  &-content {
+    margin: 1.5rem 0;
+    width: 100%;
+    h3 {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-bottom: 10px;
+      font-family: $font-monospace;
+    }
+    h4 {
+      font-family: $font-monospace;
+      font-size: 18px;
+      }
+
+    .skills-languages {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        display: flex;
+        h4 {
+          width: 100px;
+        }
+      }
+    }
+
+    .skills-list {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+
+      &__block {
+        display: flex;
+        gap: 0 50px;
+      }
+      &__item {
+        width: 50%;
+        height: max-content;
+        align-content: space-between;
+        gap: 20px 0;
+
+        p{
+          margin: 0.5rem 0;
+          font-size: 14px;
+        }
+
+      }
+    }
+  }
+
+
+  //THEMES
+  &.light{
+    background-color: $color-light-secondary;
+    color: $color-light-accent;
+    
+    h3 {
+      border-bottom: 3px solid $color-light-primary;
+    }
+    h4{
+    color: $color-light-primary;
+    }
+  }
+  &.dark{
+    background-color: $color-dark-secondary;
+    color: $color-dark-primary;
+    h2{
+      color: $color-dark-accent;
+      background-color: black;
+    }
+    
+    h3 {
+      border-bottom: 3px solid $color-dark-accent;
+    }
+    h4{
+    color: $color-dark-accent;
+    }
+  }
+}
+

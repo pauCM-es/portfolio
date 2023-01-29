@@ -1,0 +1,32 @@
+@import '../../../variables';
+
+.experience {
+
+  &-header {
+      font-family: $font-accent;
+  }
+
+  &-content {
+
+    &__block {
+      margin: 1.4rem 0;
+      
+      h3 {
+        font-family: $font-monospace;
+      }
+      h4 {
+        font-family: $font-monospace;
+        font-size: 14px;
+        margin: 5px 0;
+      }
+      .date {
+        font-family: $font-monospace;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;;
+        margin: 5px 0;
+      }
+    }
+  }
+}

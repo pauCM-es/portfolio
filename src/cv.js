@@ -7,7 +7,12 @@ export const cv = {
     email: "costamingarro@gmail.com",
     birthDate: "19/08/1989",
     phone: "(+34) 666 55 44 33",
-    image: "./assets/images/tendi.png",
+    image: [
+      // "./assets/images/tendi.png",
+      // "./assets/images/perfil-1-B&W.jpg",
+      // "./assets/images/perfil-2-B&W.jpg",
+      "./assets/images/perfil-2.jpg",
+    ],
     gitHub: "https://github.com/PCM-es",
     linkedIn: "https://www.linkedin.com/in/paula-costa-mingarro/"
   },
@@ -103,8 +108,9 @@ export const cv = {
           "TypeScript",
           "REACT",
           "ANGULAR",
-          "NODE, Express, MongoDB",
-          "PHP, mySQL"
+          "NODE, Express", 
+          "PHP",
+          "MongoDB, mySQL",
         ]
     },
   ]

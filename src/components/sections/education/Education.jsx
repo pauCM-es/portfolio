@@ -1,11 +1,13 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
+import './Education.scss'
 
 const Education = ({education}) => {
+  const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
+  const theme = isDarkTheme ? "dark" : "light" 
 
-
-  
   return (
-    <div className='education'>
+    <div className={`education ${theme}`}>
       <h2 className="education-header">
         Education
       </h2>

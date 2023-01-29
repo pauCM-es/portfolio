@@ -1,3 +1,14 @@
-$color-primary: #e5c9d0;
-$color-secondary: #fff8fa;
-$color-accent: #000000;
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+
+$font-title: 'Megrim';
+$font-accent: 'Zilla Slab Highlight';
+$font-monospace: 'Roboto Mono', monospace;
+
+$color-light-primary: #e5c9d0;
+$color-light-secondary: #ffffff;
+$color-light-accent: #000000;
+
+$color-dark-primary: #ffffff;
+$color-dark-secondary: #292929;
+$color-dark-accent: #e5c9d0;

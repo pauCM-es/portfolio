@@ -1,16 +1,17 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import './Hero.scss'
 
 const Hero = ({hero}) => {
-
   const {name, description, image} = hero
-  
+  const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
+  const theme = isDarkTheme ? "dark" : "light" 
   
   return (
-    <div className='hero'>
+    <div className={`hero ${theme}`}>
 
-      <div className="hero-perfil">
-        <img src={image} alt="foto de perfil" className="hero-perfil__img" />
+      <div className="hero-profile">
+        <img src={image[0]} alt="foto de perfil" className="hero-profile__img" />
       </div>
 
       <div className="hero-header">

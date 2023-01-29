@@ -1,13 +1,19 @@
+@import '../../../variables';
+
 .hero {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
+  border-radius: 10px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-monospace;
 
-  &-perfil {
+  &-profile {
     height: 250px;
     width: 250px;
-    
+    margin-top: -100px;
     &__img {
       height: 100%;
       border-radius: 50%;
@@ -15,14 +21,78 @@
   }
 
   &-header {
+    width: 80%;
 
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      text-align: end;
+    }
+    h3 {
+      font-size: 1rem;
+      font-family: $font-accent;
+      text-align: start;
+      margin-top: 0.5rem;
+    }
   }
 
   &-contact {
-
+    width: 80%;
+    margin-bottom: 2rem;
+    h4 {
+      margin: 0.5rem 0;
+    }
     &__iconList {
       display: flex;
-      
+      justify-content: space-evenly;
+    }
+    &__icon {
+      width: 35px;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+
+      &:hover{
+        color: red;
+        scale: 110%;
+      }
+    }
+  }
+
+  &.light {
+    background-color: $color-light-primary;
+    .hero-profile__img {
+        border: 2px solid $color-light-accent;
+    }
+    .hero-header {
+      h1 {
+      color: $color-light-secondary
+      }
+    }
+  }
+  
+  &.dark {
+    background-color: $color-dark-primary;
+    .hero-profile__img {
+        border: 2px solid $color-light-accent;
+    }
+    .hero-header {
+      h1 {
+      color: $color-dark-accent;
+      }
+      h2 {
+        color: $color-dark-secondary;
+      }
+      h3 {
+        color: $color-dark-secondary;
+      }
     }
   }
 

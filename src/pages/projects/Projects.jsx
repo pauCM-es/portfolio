@@ -10,7 +10,7 @@ const Projects = ({setShowPage}) => {
     <div className="page-projects">
       <PageNavbar
         button1="home"
-        button2="about"
+        button2="profile"
         title="PROJECTS"
         setShowPage={setShowPage}
       />

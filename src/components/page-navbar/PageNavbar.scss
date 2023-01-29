@@ -1,7 +1,40 @@
+@import '../../variables';
+
+
 .navbar {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 2rem 0;
+
+
+  .themeBtn{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+
+  .page-title {
+    font-family: $font-title;
+    font-size: 3rem;
+  }
+
+  //THEMES
+  &.light {
+    .themeBtn{
+      color: $color-light-accent;
+    }
+    .page-title{
+      color: $color-light-accent;
+    }
+  }
+  &.dark {
+    .themeBtn{
+      color: $color-dark-primary;
+    }
+    .page-title{
+      color: $color-dark-accent;
+    }
+  }
 }

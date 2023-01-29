@@ -1,25 +1,78 @@
 @import '../../variables';
 
+
 .page_btn {
   padding: 1rem;
   border-radius: 30px; 
   border: none;
+  padding: 0;
 }
 
-.primary {
-  background-color: $color-accent;
-  color: $color-secondary;
+.about-info_btn {
+  border-style: none;
+  height: 50px;
+  aspect-ratio: 2/1;
+}
+
+
+//TYPE
+.accent {
+  font-weight: bold;
   transition: all 100ms ease-in;
-  &:hover {
-    background-color: $color-primary;
-    color: $color-accent;
-    border: 2px solid $color-accent;
-    scale: 1.05;
+  
+  &.light{
+    background-color: $color-light-accent;
+    color: $color-light-secondary;
+    &:hover {
+      background-color: $color-light-primary;
+      color: $color-light-accent;
+      border: 2px solid $color-light-accent;
+      scale: 1.05;
+    }
+  }
+  &.dark{
+    background-color: $color-dark-accent;
+    color: $color-dark-secondary;
+    &:hover {
+      background-color: $color-dark-primary;
+      color: $color-dark-accent;
+      border: 2px solid $color-dark-accent;
+      scale: 1.05;
+    }
   }
 }
 
+.primary {
+  background-color: transparent;
+  font-weight: bold;
+  transition: all 100ms ease-in;
+  &:hover {
+    // background-color: $color-light-secondary;
+    color: $color-light-primary;
+    border: none;
+    scale: 1.6;
+  }
+  &.light {
+    color: $color-light-accent;
+  }
+  &.dark {
+    color: $color-dark-primary;
+  }
+}
+
+//SIZE
 .big {
   font-size: 1.5rem;
   width: 15rem;
   height: 4rem;
+}
+.medium {
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+}
+.small {
+  font-size: 1rem;
+  width: 8rem;
+  height: 2rem;
 }

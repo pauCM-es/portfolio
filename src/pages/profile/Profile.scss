@@ -1,0 +1,75 @@
+@import '../../variables';
+
+
+.page-about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &_content {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  &_hero {
+    width: 300px;
+    height: 500px;
+    margin: 0 3rem;
+    margin-top: 80px;
+  }
+
+  &_info {
+    width: 600px;
+    display: flex;
+
+    .about-info {
+      &_buttons {
+      width: 100px;
+      margin-right: 2rem;
+    }
+    &_section {
+      margin: 0 3rem;
+      }
+    }
+  }
+
+
+  &.light{
+    background-color: $color-light-secondary;
+    
+    .about-info_btn {
+      background-color: $color-light-primary;
+      &:hover {
+        font-weight: bold;
+      }
+
+      &.selected {
+        background-color: $color-light-accent;
+        color: $color-light-secondary;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &.dark {
+    background-color: $color-dark-secondary;
+
+    .about-info_btn {
+      background-color: $color-dark-primary;
+      &:hover {
+        font-weight: bold;
+      }
+
+      &.selected {
+        background-color: $color-dark-accent;
+        color: $color-dark-secondary;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
