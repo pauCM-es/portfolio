@@ -4,7 +4,7 @@
 
   h2 {
     font-family: $font-accent;
-    
+    width: fit-content;
   }
 
   &-content {
@@ -21,6 +21,36 @@
         font-size: 14px;
         font-weight: 300;;
       }
+    }
+  }
+
+  &.light {
+    h2 {
+      color: $color-light-accent;
+    }
+    h3 {
+      color: $color-light-accent;
+    }
+    h4 {
+      color: $color-light-accent;
+    }
+    p {
+      color: $color-light-accent;
+    }
+  }
+  &.dark {
+    h2 {
+      color: $color-dark-accent;
+      background-color: black;
+    }
+    h3 {
+      color: $color-dark-accent;
+    }
+    h4 {
+      color: $color-dark-primary;
+    }
+    p {
+      color: $color-dark-primary;
     }
   }
 }

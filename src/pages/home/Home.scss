@@ -12,7 +12,7 @@
     width: 50%;
     height: 100%;
     position: absolute;
-    top: 0;
+    // top: 0;
     
     &-left {
       left: 0;
@@ -80,8 +80,6 @@
     color: $color-light-accent
   }
 }
-
-
 .page-home.dark {
   .bg-left {
     background-color: $color-dark-primary;
@@ -99,5 +97,53 @@
   }
   .home-captcha_description{
     color: $color-dark-accent
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-title{
+    &_name {
+      font-size: 7rem;
+    }
+    &_surname {
+      font-size: 7rem;
+    }
+  }
+  .home-captcha_description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-home {
+    
+    .bg {
+      width: 100%;
+      position: absolute;
+      
+      &-left {
+        height: 40%;
+        top: 0;
+        z-index: -1;
+      }
+      &-right {
+        height: 60%;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  
+  }
+  .home-title{
+    flex-direction: column;
+    &_name {
+      font-size: 5rem;
+    }
+    &_surname {
+      font-size: 5rem;
+    }
+  }
+  .home-captcha_description {
+    font-size: 1rem;
   }
 }

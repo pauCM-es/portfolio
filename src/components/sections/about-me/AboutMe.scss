@@ -5,6 +5,7 @@
   &-header {
     h2 {
       font-family: $font-accent;
+      width: fit-content;
     }
     h3 {
       font-family: $font-monospace;
@@ -19,6 +20,39 @@
 
     p {
       margin: 1rem 0;
+    }
+  }
+
+  &.light {
+    &-header {
+      h2 {
+        color: $color-light-accent;
+      }
+      h3 {
+        color: $color-light-accent;
+      }
+    }
+    .aboutMe-content {
+      p {
+        color: $color-light-accent;
+      }
+    }
+  }
+
+  &.dark {
+    .aboutMe-header {
+      h2 {
+        color: $color-dark-accent;
+        background-color: black;
+      }
+      h3 {
+        color: $color-dark-accent;
+      }
+    }
+    .aboutMe-content {
+      p {
+        color: $color-dark-primary;
+      }
     }
   }
 }
