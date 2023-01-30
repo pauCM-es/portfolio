@@ -13,7 +13,7 @@ import "./Profile.scss";
 
 const Profile = ({setShowPage}) => {
   const {hero, aboutMe, education, experience, skills, languages} = cv
-  const [sectionShowing, setSectionShowing] = useState("Experience")
+  const [sectionShowing, setSectionShowing] = useState("About me")
   const infoSections = [
     {
       text: "About me",
