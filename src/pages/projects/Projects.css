@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.page-projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-projects .projects-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}/*# sourceMappingURL=Projects.css.map */

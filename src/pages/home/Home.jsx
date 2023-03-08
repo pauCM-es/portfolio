@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
 import Button from '../../components/buttons/Button';
 import ThemeButton from '../../components/buttons/ThemeButton';
+import Spinner from '../../components/spinner/Spinner';
 import "./Home.scss"
 
 
@@ -35,13 +36,26 @@ const Home = ({setShowPage}) => {
         </section>
 
       </div>
+
+      <div className={`in-construction ${theme}`}>
+        <Spinner theme={theme}/>
+        <p>I'm making some improvements.</p>
+        <p>It'll be ready monday 13th, but you can find me at 
+          <span className='in-construction__link'>
+            <a href="https://www.linkedin.com/in/paula-costa-mingarro/">
+              <img src=".\assets\icons\linkedin.svg" alt="linkein icon" />
+            </a>
+          </span>
+        </p>
+      </div>
+
       
-      <Button 
+      {/* <Button 
         key="btn-knowMore"  
         text="KNOW MORE" 
         className={`page_btn accent medium ${theme}`} 
         goTo={["profile", setShowPage]}
-      />
+      /> */}
       <ThemeButton />
 
     </div>

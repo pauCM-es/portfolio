@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.page-home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-home .bg {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+.page-home .bg-left {
+  left: 0;
+  z-index: -1;
+}
+.page-home .bg-right {
+  right: 0;
+  z-index: -1;
+}
+.page-home .home-content {
+  margin-bottom: 10%;
+}
+.page-home .home-title {
+  font-size: 10rem;
+  font-weight: bold;
+  display: flex;
+  font-family: "Megrim";
+}
+.page-home .home-title_name {
+  margin-right: 2rem;
+}
+.page-home .home-title_surname {
+  margin-left: 2rem;
+}
+.page-home .home-captcha {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Zilla Slab Highlight";
+  margin-top: 4rem;
+  text-align: end;
+}
+.page-home .themeBtn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.page-home .in-construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-home .in-construction p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.page-home .in-construction__link {
+  margin: 0 10px;
+  width: 10px;
+}
+.page-home .in-construction__link img {
+  width: 1.2rem;
+}
+.page-home .in-construction__link img:hover {
+  scale: 1.2;
+}
+
+.page-home.light .bg-left {
+  background-color: #e5c9d0;
+}
+.page-home.light .bg-right {
+  background-color: #ffffff;
+}
+.page-home.light .home-title_name {
+  color: #000000;
+}
+.page-home.light .home-title_surname {
+  color: #e5c9d0;
+}
+.page-home.light .home-captcha_description {
+  color: #000000;
+}
+.page-home.light .in-construction p {
+  color: #000000;
+}
+
+.page-home.dark .bg-left {
+  background-color: #ffffff;
+}
+.page-home.dark .bg-right {
+  background-color: #292929;
+}
+.page-home.dark .home-title_name {
+  color: #e5c9d0;
+}
+.page-home.dark .home-title_surname {
+  color: #ffffff;
+}
+.page-home.dark .home-captcha_description {
+  color: #e5c9d0;
+}
+.page-home.dark .in-construction p {
+  color: #e5c9d0;
+}
+.page-home.dark .in-construction img {
+  filter: invert(100);
+}
+
+@media (max-width: 1024px) {
+  .home-title_name {
+    font-size: 7rem;
+  }
+  .home-title_surname {
+    font-size: 7rem;
+  }
+  .home-captcha_description {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-home .bg {
+    width: 100%;
+    position: absolute;
+  }
+  .page-home .bg-left {
+    height: 40%;
+    top: 0;
+    z-index: -1;
+  }
+  .page-home .bg-right {
+    height: 60%;
+    bottom: 0;
+    z-index: -1;
+  }
+  .home-title {
+    flex-direction: column;
+  }
+  .home-title_name {
+    font-size: 5rem;
+  }
+  .home-title_surname {
+    font-size: 5rem;
+  }
+  .home-captcha_description {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=Home.css.map */

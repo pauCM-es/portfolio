@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.aboutMe-header h2 {
+  font-family: "Zilla Slab Highlight";
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.aboutMe-header h3 {
+  font-family: "Roboto Mono", monospace;
+}
+.aboutMe-content {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: justify;
+  margin: 1rem 0;
+}
+.aboutMe-content p {
+  margin: 1rem 0;
+}
+.aboutMe.light-header h2 {
+  color: #000000;
+}
+.aboutMe.light-header h3 {
+  color: #000000;
+}
+.aboutMe.light .aboutMe-content p {
+  color: #000000;
+}
+.aboutMe.dark .aboutMe-header h2 {
+  color: #e5c9d0;
+  background-color: black;
+}
+.aboutMe.dark .aboutMe-header h3 {
+  color: #e5c9d0;
+}
+.aboutMe.dark .aboutMe-content p {
+  color: #ffffff;
+}/*# sourceMappingURL=AboutMe.css.map */

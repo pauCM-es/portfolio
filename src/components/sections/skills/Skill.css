@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.skills {
+  width: 100%;
+}
+.skills h2 {
+  font-family: "Zilla Slab Highlight";
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.skills-content {
+  margin: 1.5rem 0;
+  width: 100%;
+}
+.skills-content h3 {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+.skills-content h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+}
+.skills-content .skills-languages {
+  display: flex;
+  flex-direction: column;
+}
+.skills-content .skills-languages__item {
+  display: flex;
+}
+.skills-content .skills-languages__item h4 {
+  width: 100px;
+}
+.skills-content .skills-list {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.skills-content .skills-list__block {
+  display: flex;
+  gap: 0 50px;
+}
+.skills-content .skills-list__item {
+  width: 50%;
+  height: -moz-max-content;
+  height: max-content;
+  align-content: space-between;
+  gap: 20px 0;
+}
+.skills-content .skills-list__item p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+.skills.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+.skills.light h3 {
+  border-bottom: 3px solid #e5c9d0;
+}
+.skills.light h4 {
+  color: #e5c9d0;
+}
+.skills.dark {
+  background-color: #292929;
+  color: #ffffff;
+}
+.skills.dark h2 {
+  color: #e5c9d0;
+  background-color: black;
+}
+.skills.dark h3 {
+  border-bottom: 3px solid #e5c9d0;
+}
+.skills.dark h4 {
+  color: #e5c9d0;
+}/*# sourceMappingURL=Skill.css.map */

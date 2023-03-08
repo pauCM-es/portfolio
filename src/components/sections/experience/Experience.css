@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.experience-header {
+  font-family: "Zilla Slab Highlight";
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.experience-content__block {
+  margin: 1.4rem 0;
+}
+.experience-content__block h3 {
+  font-family: "Roboto Mono", monospace;
+}
+.experience-content__block h4 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.experience-content__block .date {
+  font-family: "Roboto Mono", monospace;
+}
+.experience-content__block p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.experience.light h2 {
+  color: #000000;
+}
+.experience.light h3 {
+  color: #000000;
+}
+.experience.light h4 {
+  color: #000000;
+}
+.experience.light p {
+  color: #000000;
+}
+.experience.dark h2 {
+  color: #e5c9d0;
+  background-color: black;
+}
+.experience.dark h3 {
+  color: #e5c9d0;
+}
+.experience.dark h4 {
+  color: #ffffff;
+}
+.experience.dark p {
+  color: #ffffff;
+}/*# sourceMappingURL=Experience.css.map */

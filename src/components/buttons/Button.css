@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.page_btn {
+  padding: 1rem;
+  border-radius: 30px;
+  border: none;
+  padding: 0;
+}
+
+.about-info_btn {
+  border-style: none;
+  height: 50px;
+  aspect-ratio: 2/1;
+}
+
+.accent {
+  font-weight: bold;
+  transition: all 100ms ease-in;
+}
+.accent.light {
+  background-color: #000000;
+  color: #ffffff;
+}
+.accent.light:hover {
+  background-color: #e5c9d0;
+  color: #000000;
+  border: 2px solid #000000;
+  scale: 1.05;
+}
+.accent.dark {
+  background-color: #e5c9d0;
+  color: #292929;
+}
+.accent.dark:hover {
+  background-color: #ffffff;
+  color: #e5c9d0;
+  border: 2px solid #e5c9d0;
+  scale: 1.05;
+}
+
+.primary {
+  background-color: transparent;
+  font-weight: bold;
+  transition: all 100ms ease-in;
+}
+.primary:hover {
+  color: #e5c9d0;
+  border: none;
+  scale: 1.6;
+}
+.primary.light {
+  color: #000000;
+}
+.primary.dark {
+  color: #ffffff;
+}
+
+.big {
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 4rem;
+}
+
+.medium {
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.small {
+  font-size: 1rem;
+  width: 8rem;
+  height: 2rem;
+}/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+}
+.navbar .themeBtn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.navbar .page-title {
+  font-family: "Megrim";
+  font-size: 3rem;
+}
+.navbar.light .themeBtn {
+  color: #000000;
+}
+.navbar.light .page-title {
+  color: #000000;
+}
+.navbar.dark .themeBtn {
+  color: #ffffff;
+}
+.navbar.dark .page-title {
+  color: #e5c9d0;
+}/*# sourceMappingURL=PageNavbar.css.map */

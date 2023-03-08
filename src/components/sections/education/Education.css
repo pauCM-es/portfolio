@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.education h2 {
+  font-family: "Zilla Slab Highlight";
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.education-content__block {
+  font-family: "Roboto Mono", monospace;
+  margin: 1.4rem 0;
+}
+.education-content__block h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.education-content__block p {
+  font-size: 14px;
+  font-weight: 300;
+}
+.education.light h2 {
+  color: #000000;
+}
+.education.light h3 {
+  color: #000000;
+}
+.education.light h4 {
+  color: #000000;
+}
+.education.light p {
+  color: #000000;
+}
+.education.dark h2 {
+  color: #e5c9d0;
+  background-color: black;
+}
+.education.dark h3 {
+  color: #e5c9d0;
+}
+.education.dark h4 {
+  color: #ffffff;
+}
+.education.dark p {
+  color: #ffffff;
+}/*# sourceMappingURL=Education.css.map */

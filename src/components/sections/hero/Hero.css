@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.hero {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto Mono", monospace;
+}
+.hero-profile {
+  height: 250px;
+  width: 250px;
+  margin-top: -100px;
+}
+.hero-profile__img {
+  height: 100%;
+  border-radius: 50%;
+}
+.hero-header {
+  width: 80%;
+}
+.hero-header h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.hero-header h2 {
+  font-size: 2rem;
+  text-align: end;
+}
+.hero-header h3 {
+  font-size: 1rem;
+  font-family: "Zilla Slab Highlight";
+  text-align: start;
+  margin-top: 0.5rem;
+}
+.hero-contact {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.hero-contact h4 {
+  margin: 0.5rem 0;
+}
+.hero-contact__iconList {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero-contact__icon {
+  width: 35px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-contact__icon img {
+  width: 100%;
+}
+.hero-contact__icon:hover {
+  color: red;
+  scale: 110%;
+}
+.hero.light {
+  background-color: #e5c9d0;
+}
+.hero.light .hero-profile__img {
+  border: 2px solid #000000;
+}
+.hero.light .hero-header h1 {
+  color: #ffffff;
+}
+.hero.dark {
+  background-color: #ffffff;
+}
+.hero.dark .hero-profile__img {
+  border: 2px solid #000000;
+}
+.hero.dark .hero-header h1 {
+  color: #e5c9d0;
+}
+.hero.dark .hero-header h2 {
+  color: #292929;
+}
+.hero.dark .hero-header h3 {
+  color: #292929;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+  }
+  .hero-profile {
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+  }
+  .hero-profile__img {
+    height: 100%;
+    border-radius: 50%;
+  }
+  .hero-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+  .hero-header h1 {
+    font-size: 2.5rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: start;
+  }
+  .hero-header h2 {
+    font-size: 2rem;
+  }
+  .hero-header h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: end;
+  }
+  .hero-contact {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .hero-contact h4 {
+    display: none;
+  }
+  .hero-contact__iconList {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hero-contact__icon {
+    width: 35px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-contact__icon img {
+    width: 100%;
+  }
+  .hero-contact__icon:hover {
+    color: red;
+    scale: 110%;
+  }
+}/*# sourceMappingURL=Hero.css.map */

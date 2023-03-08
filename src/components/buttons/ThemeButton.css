@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Roboto+Mono:wght@300;400;600&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+.themeBtn {
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+}
+.themeBtn.light {
+  background-color: #000000;
+}
+.themeBtn.dark {
+  background-color: #e5c9d0;
+}/*# sourceMappingURL=ThemeButton.css.map */
