@@ -5,12 +5,15 @@ $font-title: 'Megrim';
 $font-accent: 'Zilla Slab Highlight';
 $font-monospace: 'Roboto Mono', monospace;
 
-$color-light-primary: #e5c9d0;
+$color-light-primary: var(--light-primary-color);
+// $color-light-primary: #85aeb1;
+// $color-light-primary: #e5c9d0;
 $color-light-secondary: #ffffff;
 $color-light-accent: #000000;
 
 $color-dark-primary: #ffffff;
 $color-dark-secondary: #292929;
-$color-dark-accent: #e5c9d0;
+$color-dark-accent: #81d3d8;
+// $color-dark-accent: #e5c9d0;
 
 $color-grey: #7a7a7a

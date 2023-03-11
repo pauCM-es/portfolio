@@ -8,9 +8,6 @@ export const cv = {
     birthDate: "19/08/1989",
     phone: "(+34) 666 55 44 33",
     image: [
-      // "./assets/images/tendi.png",
-      // "./assets/images/perfil-1-B&W.jpg",
-      // "./assets/images/perfil-2-B&W.jpg",
       "./assets/images/perfil-2.jpg",
     ],
     gitHub: "https://github.com/PCM-es",

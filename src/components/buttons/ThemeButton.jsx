@@ -6,12 +6,10 @@ import '../../components/buttons/ThemeButton.scss'
 
 
 const ThemeButton = () => {
-  //store - theme, lo guardo en la constante theme.
-  const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
+
+  const {isDarkTheme}  = useSelector(state => state.theme)
   const theme = isDarkTheme ? "dark" : "light" 
 
-  //Esto seria lo mismo=> const {theme}  = useSelector(state => state)
-  // theme = { isDarkTheme: false }    -> es un objeto
 
   return (
     <button 

@@ -6,12 +6,14 @@ const Hero = ({hero}) => {
   const {name, description, image} = hero
   const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
   const theme = isDarkTheme ? "dark" : "light" 
+  const lightPrimaryColor = '#85aeb1'
+
   
   return (
     <div className={`hero ${theme}`}>
 
       <div className="hero-profile">
-        <img src={image[0]} alt="foto de perfil" className="hero-profile__img" />
+        <img src={image[0]} alt="foto de perfil" className="hero-profile__img"/>
       </div>
 
       <div className="hero-header">
@@ -27,15 +29,16 @@ const Hero = ({hero}) => {
             <img src="./assets/icons/mail4.svg" alt="email icono" />
           </div>
           <div className="hero-contact__icon">
-            <img src="./assets/icons/phone.svg" alt="telefono icono" />
-          </div>
-          <div className="hero-contact__icon">
             <img src="./assets/icons/linkedin.svg" alt="linkedIn icono" />
           </div>
           <div className="hero-contact__icon">
             <img src="./assets/icons/github.svg" alt="github icono" />
           </div>
         </div>
+      </div>
+      <div className="hero__color">
+        <label htmlFor="light-primary">Pick color</label>
+        <input type="color" name="light-primary" id="light-primary"  value={lightPrimaryColor}/>
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 
 function App() {
-  const [showPage, setShowPage] =  useState("home")
+  const [showPage, setShowPage] =  useState("profile")
 
   return (
     <div className="app">

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux';
-import Button from '../../components/buttons/Button';
+// import Button from '../../components/buttons/Button';
 import ThemeButton from '../../components/buttons/ThemeButton';
 import Spinner from '../../components/spinner/Spinner';
 import "./Home.scss"

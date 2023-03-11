@@ -1,0 +1,17 @@
+@import '../../variables';
+
+.carousel {
+  height: 200px;
+  
+  &__img {
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.slider-container {
+  width: 300px;
+}
+.paging-item {
+  margin: 0 3px;
+}
