@@ -163,10 +163,51 @@
         }
   
         &:hover{
-          color: red;
           scale: 110%;
+          img {
+            filter: invert(100%);
+          }
         }
       }
+    }
+  }
+}
+
+@media(max-width: 390px) {
+  .hero {
+    width: 90%;
+  }
+
+  .hero-profile {
+    height: 150px;
+    width: 150px;
+    margin-top: -70px;
+    &__img {
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  
+  .hero-header {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      padding-top: 7px;
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .hero-contact {
+    margin: 1rem 0;
+
+    &__icon {
+      width: 25px;
     }
   }
 }

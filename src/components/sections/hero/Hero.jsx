@@ -6,7 +6,7 @@ const Hero = ({hero}) => {
   const {name, description, image} = hero
   const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
   const theme = isDarkTheme ? "dark" : "light" 
-  const lightPrimaryColor = '#85aeb1'
+  // const lightPrimaryColor = '#85aeb1'
 
   
   return (
@@ -36,10 +36,10 @@ const Hero = ({hero}) => {
           </div>
         </div>
       </div>
-      <div className="hero__color">
+      {/* <div className="hero__color">
         <label htmlFor="light-primary">Pick color</label>
         <input type="color" name="light-primary" id="light-primary"  value={lightPrimaryColor}/>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -38,3 +38,9 @@
     }
   }
 }
+
+@media (max-width: 390px) {
+  .navbar {
+    display: none;
+  }
+}

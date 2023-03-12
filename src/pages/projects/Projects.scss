@@ -2,7 +2,6 @@
 
 
 .page-projects {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,4 +15,14 @@
     justify-content: center;
 
   }
+}
+
+.page-projects.light{
+  background-color: $color-light-secondary;
+
+}
+
+.page-projects.dark {
+  background-color: $color-dark-secondary;
+
 }

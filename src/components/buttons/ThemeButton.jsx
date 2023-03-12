@@ -14,9 +14,7 @@ const ThemeButton = () => {
   return (
     <button 
       className= {`themeBtn ${theme}`}
-      onClick={()=> {toggleTheme(!isDarkTheme)}} //uso la funcion declarada en archivo theme.action.js
-      // para cambiar el estado al valor contrario de lo que tenga theme.isDarkside con el simbolo !.
-      //la funcion toggleTheme modifica el valor de la propiedad isDarkTheme.
+      onClick={()=> {toggleTheme(!isDarkTheme)}}
     >{isDarkTheme ? "🌞" : "🌙"}</button>
   )
 }

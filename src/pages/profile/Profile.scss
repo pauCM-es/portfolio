@@ -22,6 +22,10 @@
     margin: 80px 3rem 0 3rem;
   }
 
+  &_btn {
+    display: none;
+  }
+
   &_info {
     width: 600px;
     display: flex;
@@ -70,6 +74,42 @@
   }
 }
 
+.about-info_btn {
+  border-style: none;
+  height: 50px;
+  aspect-ratio: 2/1;
+
+  @media (max-width: 390px) {
+    width: 25%;
+  }
+}
+
+
+//TYPE
+.accent {
+  font-weight: bold;
+  transition: all 100ms ease-in;
+  
+  &.light{
+    background-color: $color-light-accent;
+    color: $color-light-secondary;
+    &:hover {
+      background-color: $color-light-secondary;
+      color: $color-light-accent;
+      border: 1px solid $color-light-accent;
+    }
+  }
+  &.dark{
+    background-color: $color-dark-accent;
+    color: $color-dark-secondary;
+    &:hover {
+      background-color: $color-dark-primary;
+      color: $color-dark-accent;
+      border: 1px solid $color-light-accent;
+    }
+  }
+}
+
 
 
 @media (max-width: 768px) {
@@ -93,7 +133,6 @@
       .about-info {
           &_buttons {
           width: 100px;
-          margin: 0 1.5rem;
         }
       }
     }
@@ -104,25 +143,45 @@
     overflow-y: scroll;
   
     &_content {
+      margin-top: 3rem;
     }
   
     &_hero {
-      width: 300px;
+      width: 100%;
       margin-top: 80px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_btn {
+      display: flex;
+      align-self: flex-end;
+      border: none;
+      background-color: transparent;
+      color: $color-light-accent;
+      font-size: 16px;
+      font-family: $font-monospace;
+      margin: 0 1rem 1rem 0;
     }
   
     &_info {
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      margin-right: 3rem;
       overflow-y: visible;
+      margin: 0;
+
       .about-info {
+
           &_buttons {
-          display: flex;
-          width: 95%;
+          flex-wrap: wrap;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+
           &_btn {
-            width: 22%;
+            width: fit-content;
           }
         }
       }

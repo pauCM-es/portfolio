@@ -8,10 +8,12 @@ import AboutMe from "../../components/sections/about-me/AboutMe";
 import Hero from "../../components/sections/hero/Hero";
 import Button from "../../components/buttons/Button";
 import PageNavbar from "../../components/page-navbar/PageNavbar";
+import { motion } from "framer-motion"
+
 import { cv } from '../../cv'
 import "./Profile.scss";
 
-const Profile = ({setShowPage}) => {
+const Profile = ({delayShowPage}) => {
   const {hero, aboutMe, education, experience, skills, languages} = cv
   const [sectionShowing, setSectionShowing] = useState("About me")
   const infoSections = [
@@ -43,23 +45,34 @@ const Profile = ({setShowPage}) => {
         button1="home"
         button2="projects"
         title="PROFILE"
-        setShowPage={setShowPage}
+        delayShowPage={delayShowPage}
       />
 
       <section className="page-about_content">
         <section className="page-about_hero">
           <Hero hero={hero} />
         </section>
+
+        <motion.button
+          className="page-about_btn"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ type:'spring', damping: 4 }}
+          whileTap={{ scale: 0.5 }}
+          onClick={()=> delayShowPage('projects', 500)}
+          
+        >See my projects -&gt;
+        </motion.button>
+
         <section className="page-about_info">
           <div className="about-info_buttons">
             {infoSections.map((section, index) => {
               return (
-                <Button 
+                <button 
                   key={index + section.text} 
-                  text={section.text} 
                   className={`about-info_btn ${section.text === sectionShowing ? "selected" : '' }`} 
-                  goTo={[section.text, setSectionShowing]} 
-                />
+                  onClick={()=> setSectionShowing(section.text)}
+                >{section.text}</button>
               )
             })}
           </div>
