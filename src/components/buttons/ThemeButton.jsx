@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { toggleTheme } from '../../redux/theme/theme.action';
+import { motion } from "framer-motion"
 import '../../components/buttons/ThemeButton.scss'
 
 
@@ -12,10 +13,11 @@ const ThemeButton = () => {
 
 
   return (
-    <button 
+    <motion.button 
       className= {`themeBtn ${theme}`}
+      whileTap={{ scale: 0.7 }}
       onClick={()=> {toggleTheme(!isDarkTheme)}}
-    >{isDarkTheme ? "🌞" : "🌙"}</button>
+    >{isDarkTheme ? "🌞" : "🌙"}</motion.button>
   )
 }
 

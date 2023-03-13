@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import './ProjectCard.scss'
 
 const ProjectCard = ({project}) => {
+  const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
+  const theme = isDarkTheme ? "dark" : "light" 
   
   const {title, subtitle, date, image, video, description, github, link, icons} = project
   const [isVisible, setIsVisible] = useState(true)
@@ -23,7 +26,7 @@ const ProjectCard = ({project}) => {
 
 
   return (
-    <div className='card'>
+    <div className={`card ${theme}`}>
       {
       isVisible && <div className="card__img-container">
         {

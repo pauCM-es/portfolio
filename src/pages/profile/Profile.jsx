@@ -42,6 +42,7 @@ const Profile = ({delayShowPage}) => {
   return (
     <div className={`page-about ${theme}`}>
       <PageNavbar
+        icon="home"
         button1="home"
         button2="projects"
         title="PROFILE"

@@ -12,6 +12,7 @@ const Projects = ({delayShowPage}) => {
   return (
     <div className={`page-projects ${theme}`}>
       <PageNavbar
+        icon="profile"
         button1="home"
         button2="profile"
         title="PROJECTS"

@@ -9,7 +9,7 @@
   border-radius: 5px;
   background-color: $color-light-secondary;
   margin: 1rem;
-  box-shadow: 0px 3px 15px 1px $color-light-primary;
+  box-shadow: 0px 8px 10px 2px $color-light-primary;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     display: none;
@@ -122,6 +122,14 @@
 
     p {
       padding: 5px 0;
+    }
+  }
+
+
+  &.dark {
+    .card__title {
+      color: $color-dark-accent;
+      background-color: $color-dark-secondary;
     }
   }
 }

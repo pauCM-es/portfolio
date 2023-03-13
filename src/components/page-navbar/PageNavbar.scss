@@ -8,11 +8,8 @@
   align-items: center;
   margin: 2rem 0;
 
-
-  .themeBtn{
-    position: absolute;
-    top: 50px;
-    right: 50px;
+  .page-icon {
+    display: none;
   }
 
   .page-title {
@@ -39,8 +36,30 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 420px) {
   .navbar {
-    display: none;
+    margin: 1rem 0;
+
+    & .page-icon {
+      display: flex;
+      position: absolute;
+      left: 1.5rem;
+      color: $color-light-accent;
+    }
+    
+    & .page_btn {
+      display: none;
+    }
+    
+    & .page-title {
+      font-size: 2.5rem;
+    }
+
+    &.dark {
+      & .page-icon {
+        color: $color-dark-accent
+      }
+    }
   }
 }
+

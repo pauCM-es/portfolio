@@ -2,23 +2,25 @@
 
 .page-home {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   
   .bg {
     width: 50%;
     height: 100%;
     position: absolute;
-    // top: 0;
     
     &-left {
+      top: 0;
       left: 0;
       z-index: -1;
     }
     &-right {
+      // top: 0;
       right: 0;
       z-index: -1;
     }
@@ -58,12 +60,6 @@
       margin-top: 8rem;
 
     }
-  }
-
-  & .themeBtn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
   }
 
   .in-construction {
@@ -173,7 +169,7 @@
       &-left {
         height: 40%;
         top: 0;
-        z-index: -1;
+        z-index: -3;
       }
       &-right {
         height: 60%;

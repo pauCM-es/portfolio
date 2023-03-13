@@ -71,12 +71,14 @@ const Home = ({delayShowPage}) => {
             text="KNOW MORE" 
             className={`page_btn accent medium ${theme}`} 
             goTo={["profile", delayShowPage, 700]}
-            exitAnimation={setExitAnimation}
             />
         </div>
       </div>
-
-      <ThemeButton />
+      
+      <motion.div
+      >
+        <ThemeButton />
+      </motion.div>
 
     </div>
   )
