@@ -23,6 +23,20 @@
     }
   }
 
+  &-prints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    
+    &_img {
+      height: 30px;
+      aspect-ratio: 3/2;
+      position: relative;
+      
+    }
+  }
+
   &.light {
     &-header {
       h2 {
@@ -54,5 +68,11 @@
         color: $color-dark-primary;
       }
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .aboutMe {
+    padding: 1rem;
   }
 }

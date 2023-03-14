@@ -17,7 +17,7 @@ const AboutMe = ({hero, info}) => {
       <div className="aboutMe-content">
         {info.map(infoElement => <p key={JSON.stringify(infoElement.info)} className="aboutMe-content__p">{infoElement.info}</p> )}
       </div>
-
+      
     </div>
   )
 }

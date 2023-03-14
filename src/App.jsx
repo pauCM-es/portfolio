@@ -5,13 +5,21 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 
 function App() {
-  const [showPage, setShowPage] =  useState("home")
+  const [showPage, setShowPage] =  useState("projects")
+
+  const delayShowPage = async (showPage, time, event) => {
+    const delay = ms => new Promise(
+      resolve => setTimeout(resolve, ms)
+    );
+    await delay(time);
+    setShowPage(showPage)
+  };
 
   return (
     <div className="app">
-      {showPage === "home" && <Home setShowPage={setShowPage}/>}
-      {showPage === "profile" && <Profile setShowPage={setShowPage}/>}
-      {showPage === "projects" && <Projects setShowPage={setShowPage}/>}
+      {showPage === "home" && <Home delayShowPage={delayShowPage}/>}
+      {showPage === "profile" && <Profile delayShowPage={delayShowPage}/>}
+      {showPage === "projects" && <Projects delayShowPage={delayShowPage}/>}
     </div>
   );
 }

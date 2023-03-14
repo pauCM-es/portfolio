@@ -3,16 +3,20 @@ import "./Projects.scss";
 import { projects } from "../../projects";
 import ProjectCard from "../../components/cards/ProjectCard";
 import PageNavbar from "../../components/page-navbar/PageNavbar";
+import { useSelector } from "react-redux";
 
-const Projects = ({setShowPage}) => {
+const Projects = ({delayShowPage}) => {
+  const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
+  const theme = isDarkTheme ? "dark" : "light" 
 
   return (
-    <div className="page-projects">
+    <div className={`page-projects ${theme}`}>
       <PageNavbar
+        icon="profile"
         button1="home"
         button2="profile"
         title="PROJECTS"
-        setShowPage={setShowPage}
+        delayShowPage={delayShowPage}
       />
 
       <section className="projects-content">
