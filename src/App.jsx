@@ -5,7 +5,7 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 
 function App() {
-  const [showPage, setShowPage] =  useState("projects")
+  const [showPage, setShowPage] =  useState("home")
 
   const delayShowPage = async (showPage, time, event) => {
     const delay = ms => new Promise(
