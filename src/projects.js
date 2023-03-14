@@ -9,7 +9,7 @@ export const projects = [
     video: "",
     intro: [
       `Simple apps like this one can optimaze work at small and medium industries where still the paper is the winner.`,
-      `UNDER CONSTRUNCTION -> I'm redoing them in the way I know I can do it, so it reflects my real work.`
+      `UNDER CONSTRUNCTION -> Working on it so it's not only an MVP.`
     ],
     description: [
       `Group project end of bootcamp at Hupgrade Hub. An MVP for a real industry.`,
@@ -47,18 +47,19 @@ export const projects = [
     video: "",
     intro: [
       `Use the WatchMode API. The back is done with JSON-Server and Angular the front.`,
-      `UNDER CONSTRUNCTION -> I'm redoing them in the way I know I can do it, so it reflects my real work.`],
+      `UNDER CONSTRUNCTION -> I plan on redoing it. All the obstacles we 
+      encountered along the way made de code a little messy at the end.`],
     description: [
       `Small group project for Angular.`,
-      `The idea is that users select which streaming services have, and:`,
-      `- At the home page, you can see the titles trending.`,
-      `- Can look for information of any movie, tv-show, miniserie, ect...`,
-      `- Can know on which platforms any title is streaming.`,
+      `The idea is that users select which streaming services have so they can:`,
+      `- See the titles trending.`,
+      `- Look for information of any movie, tv-show, miniserie, ect...`,
+      `- Know on which platforms any title is streaming.`,
       ` One of the difficulties we ran into was with json-server. We used it to store data from the API to 
       reduce the number of requests (there was a limit of 1000 per month), but it got clogged and gave us a hell of a fight. 
       We had to get creative in order to do it.`,
       `Also had to work on cleaning up the objects received from the API to not clutter the json-server 
-      with unnecessary information. We realized that it has limited capacity.`,
+      with unnecessary information. We realized, a little late, that it has limited capacity.`,
       `I learned a lot about Angular, and working with GIT as a part of a remote team, but most of all I learned from 
       the number of obstacles along the way that forced us to react quickly and adjust our thinking as we went.`,
     ],
@@ -79,7 +80,6 @@ export const projects = [
     I've been using this structure since then.`,
     `I use BEM for scss styles, but realize I was making some mistakes, so I already have in mind not to repeat them. `,
     `While trying to implement an input to pick the color theme I've learn new ways in which this can be made more eficiently.`,
-    // `    Scss variables are not accesible with javascript, because they're compile to css. But css variables are...`,
     `I had to implement a delay when clicking buttons so the animation can be seen before the page change.`,
     `There is also a reusable button. The ones on the navbar and the home page. It would also work with the profile section buttons.`,
   ],
@@ -90,12 +90,12 @@ export const projects = [
   },
   {
     title: `3d prints API REST`,
-    subtitle: "API to keep track of different settings use while 3d-printring.",
+    subtitle: "API to keep track of different settings used on 3D prints.",
     date: "Jan. 2023",
     image: `https://res.cloudinary.com/didwvaeha/image/upload/v1678738363/portfolio/api-rest-prints_yxqyf1.png`,
     video: ``,
     intro: [
-      `Individual project at Upgrade Hub bootcamp.`,
+      `Project at Upgrade Hub bootcamp.`,
       `The idea comes because I'm incapable of remember what settings I used, or what I shoud use for new prints. Also it'd be usefull
       if I could get ideas from other people settings.`
      ],
@@ -120,7 +120,7 @@ export const projects = [
     image: `https://res.cloudinary.com/didwvaeha/image/upload/v1678737951/portfolio/pokedex_k2wjst.png`,
     video: `https://res.cloudinary.com/didwvaeha/video/upload/v1678213926/portfolio/Pokedex_excmot.webm`,
     intro: [
-      `Individual project end of javascript module at Upgrade Hub bootcamp.`,
+      `Project end of javascript module at Upgrade Hub bootcamp.`,
       `Technologies used: javaScript, DOM, HTML & SCSS, poke-API.`,
       `Super proud of this one. Made after only 10 days of javascript classes.`
     ],

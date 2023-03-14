@@ -19,10 +19,10 @@
       height: 100%;
       border-radius: 50%;
       object-fit: contain;
-      transition: all ease-in-out 0.2;
+      transition: all  0.5s;
       &:hover {
         filter: grayscale(100);
-        scale: 1.02;
+        transform: scale(1.02);
         cursor: pointer;
       }
     }

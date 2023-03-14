@@ -14,7 +14,8 @@ const Hero = ({hero}) => {
     <div className={`hero ${theme}`}>
 
       <motion.a 
-        href={linkedIn}
+        href={linkedIn} 
+        target="_blank"
         className="hero-profile"
         animate={{ boxShadow: '0 0 15px 0px rgba(0, 0, 0, 0.005)' }}
         transition={{
@@ -42,7 +43,7 @@ const Hero = ({hero}) => {
       <div className="hero-contact">
         <h4>Contact me:</h4>
         <div className="hero-contact__iconList">
-          <a className="hero-contact__icon" href={`mailto:"${email}"`}>
+          <a className="hero-contact__icon" href={`mailto:"${email}"`} target="_blank">
             <motion.img 
             src="./assets/icons/mail4.svg" 
             alt="email icono" 
@@ -51,7 +52,7 @@ const Hero = ({hero}) => {
             transition={{ type: 'spring'}}
             />
           </a>
-          <a className="hero-contact__icon" href={linkedIn}>
+          <a className="hero-contact__icon" href={linkedIn} target="_blank">
             <motion.img 
             src="./assets/icons/linkedin.svg" 
             alt="linkedIn icono" 
@@ -60,7 +61,7 @@ const Hero = ({hero}) => {
             transition={{ type: 'spring'}}
             />
           </a>
-          <a className="hero-contact__icon" href={gitHub}>
+          <a className="hero-contact__icon" href={gitHub} target="_blank">
             <motion.img 
             src="./assets/icons/github.svg" 
             alt="github icono" 

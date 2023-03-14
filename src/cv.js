@@ -25,7 +25,7 @@ export const cv = {
       `,
     },
     {
-      info: `Even if I consider that learning how to program comes easy to me, I also think that my strengths come from my soft skills. 
+      info: `Even if I consider that learning how to program comes mostly easy to me, I also think that my strengths come from my soft skills. 
 
       `,
     },

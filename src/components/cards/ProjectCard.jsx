@@ -59,8 +59,8 @@ const ProjectCard = ({project}) => {
                 <img src="./assets/icons/play2.svg" alt="icon to play video" />
               </span>
             }
-            {github && <span className='link'><a href={github}><img src={svgIcons.github} alt="link to repositorio github" /></a></span> }
-            {link && <span className='link'><a href={link}><img src="./assets/icons/link.svg" alt="link to app" /></a></span> }
+            {github && <span className='link'><a href={github} target="_blank"><img src={svgIcons.github} alt="link to repositorio github" /></a></span> }
+            {link && <span className='link'><a href={link} target="_blank"><img src="./assets/icons/link.svg" alt="link to app" /></a></span> }
           </div>
         </div>
         {
