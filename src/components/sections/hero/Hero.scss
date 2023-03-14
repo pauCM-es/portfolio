@@ -14,9 +14,17 @@
     height: 250px;
     width: 250px;
     margin-top: -100px;
+    border-radius: 50%;
     &__img {
       height: 100%;
       border-radius: 50%;
+      object-fit: contain;
+      transition: all ease-in-out 0.2;
+      &:hover {
+        filter: grayscale(100);
+        scale: 1.02;
+        cursor: pointer;
+      }
     }
   }
 
@@ -60,14 +68,16 @@
       }
 
       &:hover{
-        color: red;
-        scale: 110%;
+        cursor: pointer;
       }
     }
   }
 
   &.light {
     background-color: $color-light-primary;
+    .hero-profile{
+      box-shadow:  0 0 7px 0 $color-light-accent;
+    }
     .hero-profile__img {
         border: 2px solid $color-light-accent;
     }
@@ -80,6 +90,10 @@
   
   &.dark {
     background-color: $color-dark-primary;
+
+    .hero-profile{
+      box-shadow:  0 0 7px 4px $color-dark-accent;
+    }
     .hero-profile__img {
         border: 2px solid $color-light-accent;
     }

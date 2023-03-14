@@ -5,15 +5,13 @@ import Home from './pages/home/Home';
 import Projects from './pages/projects/Projects';
 
 function App() {
-  const [showPage, setShowPage] =  useState("home")
+  const [showPage, setShowPage] =  useState("projects")
 
   const delayShowPage = async (showPage, time, event) => {
     const delay = ms => new Promise(
       resolve => setTimeout(resolve, ms)
     );
-    console.log('before');
     await delay(time);
-    console.log('after', showPage);
     setShowPage(showPage)
   };
 

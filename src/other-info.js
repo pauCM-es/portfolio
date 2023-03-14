@@ -1,4 +1,4 @@
-export const carouselImg = [
+export const prints3d = [
   'https://res.cloudinary.com/didwvaeha/image/upload/v1678356321/3d-prints/IMG_20220202_192216_2_ohhaci.jpg',
   'https://res.cloudinary.com/didwvaeha/image/upload/v1678356321/3d-prints/IMG_20220213_112115_2_hpaqxt.jpg',
   'https://res.cloudinary.com/didwvaeha/image/upload/v1678356321/3d-prints/IMG_20220129_211010_2_iggwcp.jpg',

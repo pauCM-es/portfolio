@@ -6,7 +6,7 @@ const ProjectCard = ({project}) => {
   const isDarkTheme  = useSelector(state => state.theme.isDarkTheme)
   const theme = isDarkTheme ? "dark" : "light" 
   
-  const {title, subtitle, date, image, video, description, github, link, icons} = project
+  const {title, subtitle, date, image, video,intro, inConstruction, description, github, link, icons} = project
   const [isVisible, setIsVisible] = useState(true)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -35,13 +35,17 @@ const ProjectCard = ({project}) => {
           : <img src={image} alt="captura de pantalla del proyecto" />
         }
         
+        { inConstruction && <span><img className='card__img-container--in-construction' src="https://res.cloudinary.com/didwvaeha/image/upload/v1678737571/portfolio/under-construction_hnqbdt.png" alt="in construction tag" /></span>}
       </div>
       }
       
-      <h2 className='card__title'>{title}</h2>
+      <h2 className='card__title'>{title}
+      </h2>
       <section className='card__content'>
         <p className='card__date'>{date}</p>
-        <h3 className='card__subtitle'>{subtitle}</h3>
+        {
+          isVisible && <h3 className='card__subtitle'>{subtitle}</h3>
+        }
         <div className='card__list'>
           <div className="card__list-icons">
           {icons.map(icon => {
@@ -61,9 +65,12 @@ const ProjectCard = ({project}) => {
         </div>
         {
           !isVisible && <div className='card__description'>
-          {description.map(parraf => {
-            return <p>{parraf}</p>
-          })}
+          {
+          intro.map(paraf => { return <p className='card__description__intro'>{paraf}</p> })
+          }
+          {
+          description.map(paraf => { return <p>{paraf}</p> })
+          }
         </div>
         }
         

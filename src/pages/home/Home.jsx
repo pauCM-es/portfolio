@@ -9,13 +9,8 @@ import { motion } from "framer-motion"
 
 const Home = ({delayShowPage}) => {
 
-  const [exitAnimation, setExitAnimation] = useState(false)
   const isDarkTheme = useSelector(state => state.theme.isDarkTheme) 
   const theme = isDarkTheme ? "dark" : "light" 
-  
-  useEffect(() => {
-    console.log("loading componente:",exitAnimation);
-  }, [exitAnimation])
   
 
   return (
@@ -70,7 +65,7 @@ const Home = ({delayShowPage}) => {
             key="btn-knowMore"  
             text="KNOW MORE" 
             className={`page_btn accent medium ${theme}`} 
-            goTo={["profile", delayShowPage, 700]}
+            goTo={["profile", delayShowPage, 500]}
             />
         </div>
       </div>

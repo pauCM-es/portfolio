@@ -25,6 +25,14 @@
     aspect-ratio: 3/2;
     overflow: hidden;
     position: relative;
+
+    span img {
+      position:absolute;
+      margin-left: 70px;
+      width: 150px;
+      object-fit: contain;
+    }
+
     
     img {
       position: absolute;
@@ -105,6 +113,7 @@
     background-color: transparent;
     border-radius: 5px;
     padding: 5px;
+    margin-bottom: 10px;
     border: 1px solid rgb(202, 28, 68);
     color:rgb(202, 28, 68);
     align-self: center;
@@ -117,11 +126,19 @@
   }
 
   &__description {
-    font-size: 14px;
+    font-size: 12px;
     text-align: justify;
+    margin-bottom: 10px;
 
+    p.card__description__intro {
+      font-family: $font-monospace;
+      font-weight: 600;
+    }
+    
     p {
       padding: 5px 0;
+      font-size: 14px;
+      font-family: var(--font--root);
     }
   }
 
