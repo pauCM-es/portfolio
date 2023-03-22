@@ -1,5 +1,34 @@
 export const projects = [
   {
+    title: `Rumi Timer`,
+    subtitle: `Timer for Rumi game / "Rabino frances."`,
+    date: "Mar. 2023",
+    inConstruction: true,
+    // image: `https://res.cloudinary.com/didwvaeha/image/upload/v1678737571/portfolio/under-construction_hnqbdt.png`,
+    image: `https://res.cloudinary.com/didwvaeha/image/upload/v1679510749/portfolio/rumi_kqisqo.png`,
+    video: "",
+    intro: [
+      `Just doing this app to annoy my brother and his tendency to go over the time limit every turn hehehe...😆  `,
+      `UNDER CONSTRUNCTION -> Still working on more features and styling.`
+    ],
+    description: [
+      `Doing it with:`,
+      `- REACT`,
+      `- Redux for game and players states`,
+      `- Style with Tailwind + Headless UI. `,
+      `I wanted to keep practicing react and redux, and also give Tailwind a second chance. 
+      I thought they would be perfect for small projects like this one.`,
+      `Features: game and player settings, countdown, pass turn by tapping timer, keeps track of turns, 
+      scores for each game, keeps track of player deaths and the reward pot 💰, it increases every time a player dies and buys another life.`,
+      ``,
+      `It's only half done 😄`,
+    ],
+    tags: ['react', 'redux', 'tailwind', 'headlessUI'],
+    icons:['react', 'redux', 'tailwind'],
+    github: "https://github.com/pauCM-es/rumi-timer",
+    link: 'https://rumi-timer.vercel.app/',
+  },  
+  {
     title: `EscandallosApp`,
     subtitle: "Helps with data register of quality produce at stone fruit warehouses",
     date: "Feb. 2023",
@@ -35,7 +64,7 @@ export const projects = [
     ],
     tags: ['angular', 'typecript', 'node', 'mongo', 'tailwind', 'cloudinary', 'socket.io'],
     icons:['angular', 'node', 'mongo', 'tailwind'],
-    github: "https://github.com/pauCM-es/portfolio",
+    github: null,
     link: null,
   },  
   {
@@ -65,7 +94,7 @@ export const projects = [
     ],
     tags: ['angular', 'sass', 'jason-server', 'git'],
     icons:['angular', 'sass'],
-    github: "https://github.com/pauCM-es/portfolio",
+    github: null,
     link: null,
   },
   {
