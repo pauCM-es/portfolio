@@ -1,27 +1,24 @@
 export const projects = [
   {
     title: `Rumi Timer`,
-    subtitle: `Timer for Rumi game / "Rabino frances."`,
+    subtitle: `Timer for Rummikub game / "Rabino frances."`,
     date: "Mar. 2023",
-    inConstruction: true,
+    inConstruction: false,
     // image: `https://res.cloudinary.com/didwvaeha/image/upload/v1678737571/portfolio/under-construction_hnqbdt.png`,
     image: `https://res.cloudinary.com/didwvaeha/image/upload/v1679510749/portfolio/rumi_kqisqo.png`,
-    video: "",
+    video: "https://res.cloudinary.com/didwvaeha/video/upload/v1680189843/portfolio/Rumi-Timer-App_biyilf.webm",
     intro: [
-      `Just doing this app to annoy my brother and his tendency to go over the time limit every turn hehehe...😆  `,
-      `UNDER CONSTRUNCTION -> Still working on more features and styling.`
+      `Just doing this app to annoy my brother and his tendency to go over the time limit every turn hehehe...😆  `
     ],
     description: [
-      `Doing it with:`,
+      `Tecnologies used:`,
       `- REACT`,
       `- Redux for game and players states`,
       `- Style with Tailwind + Headless UI. `,
       `I wanted to keep practicing react and redux, and also give Tailwind a second chance. 
       I thought they would be perfect for small projects like this one.`,
       `Features: game and player settings, countdown, pass turn by tapping timer, keeps track of turns, 
-      scores for each game, keeps track of player deaths and the reward pot 💰, it increases every time a player dies and buys another life.`,
-      ``,
-      `It's only half done 😄`,
+      scores for each game, keeps track of player deaths and the reward pot 💰, it increases every time a player dies and buys another life.`
     ],
     tags: ['react', 'redux', 'tailwind', 'headlessUI'],
     icons:['react', 'redux', 'tailwind'],
